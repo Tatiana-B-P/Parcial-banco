@@ -1,11 +1,10 @@
 package Modelo;
 
-public class CuentaDebito {
-	double interes;
+public class CuentaDebito extends Cuenta{
+	double interes = 0.2;
 	int numeroCuenta;
-	public CuentaDebito(double interes, int numeroCuenta) {
-		super();
-		this.interes = interes;
+	public CuentaDebito(int numeroCuenta, int saldo) {
+		super(saldo);
 		this.numeroCuenta = numeroCuenta;
 	}
 	public double getInteres() {
@@ -21,5 +20,7 @@ public class CuentaDebito {
 		this.numeroCuenta = numeroCuenta;
 	}
 	
-	
+	public void descripcionCuenta() {
+		System.out.println("El numero de su cuenta debito es: " + numeroCuenta);
+	}
 }
