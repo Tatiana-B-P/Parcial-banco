@@ -10,17 +10,12 @@ public class CuentaDebito extends Cuenta{
 	public double getInteres() {
 		return interes;
 	}
-	public void setInteres(double interes) {
-		this.interes = interes;
-	}
+	
 	public int getNumeroCuenta() {
 		return numeroCuenta;
 	}
-	public void setNumeroCuenta(int numeroCuenta) {
-		this.numeroCuenta = numeroCuenta;
-	}
 	
-	public void descripcionCuenta() {
-		System.out.println("El numero de su cuenta debito es: " + numeroCuenta);
+	public String descripcionCuenta() {
+		return "El numero de su cuenta debito es: " + numeroCuenta;
 	}
 }

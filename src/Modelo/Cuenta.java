@@ -20,5 +20,5 @@ public abstract class Cuenta {
 		saldo = saldo - retiro;
 	}
 	
-	public abstract void descripcionCuenta();
+	public abstract String descripcionCuenta();
 }
