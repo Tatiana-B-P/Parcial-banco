@@ -1,6 +1,6 @@
 package Modelo;
 
-public class Cliente {
+public class Cliente implements iCliente {
 	private String nombre;
 	private int docIdentificacion;
 	private Cuenta cuenta;
@@ -31,5 +31,8 @@ public class Cliente {
 		this.cuenta = cuenta;
 	} 
 	
+	public void datosCliente() {
+		System.out.println("El nombre del cliente es: " + nombre + "y su cuenta es: " + cuent);
+	}
 	
 }
