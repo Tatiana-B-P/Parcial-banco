@@ -1,3 +1,3 @@
 # Taller repaso excepciones
 ### Diagrama UML
-![Diagrama UML](image.png)
+![Diagrama UML](diagramaUML.svg)
