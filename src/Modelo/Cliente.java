@@ -1,7 +1,5 @@
 package Modelo;
 
-
-
 public class Cliente implements iCliente {
 	private String nombre;
 	private int docIdentificacion;
@@ -31,8 +29,16 @@ public class Cliente implements iCliente {
 		return cuenta;
 	}
 	
-	public void datosCliente() {
-		System.out.println("El nombre del cliente es: " + nombre + "\nSu numero de identificacion es: " + docIdentificacion + "\n" + cuenta[0].descripcionCuenta() + "\n" + cuenta[1].descripcionCuenta());
+	public void datosCliente()throws NullPointerException {
+		if(cuenta[0]==null) {
+			System.out.println("El nombre del cliente es: " + nombre + "\nSu numero de identificacion es: " + docIdentificacion + "\n" + cuenta[1].descripcionCuenta());
+		}
+		else if(cuenta[1]==null) {
+			System.out.println("El nombre del cliente es: " + nombre + "\nSu numero de identificacion es: " + docIdentificacion+ "\n" +cuenta[0].descripcionCuenta());
+		}
+		else {
+			System.out.println("El nombre del cliente es: " + nombre + "\nSu numero de identificacion es: " + docIdentificacion + "\n" + cuenta[0].descripcionCuenta() + "\n" + cuenta[1].descripcionCuenta());
+		}
 	}
 	
 }

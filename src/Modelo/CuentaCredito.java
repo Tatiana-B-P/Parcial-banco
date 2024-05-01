@@ -19,6 +19,4 @@ public class CuentaCredito extends Cuenta {
 	public String descripcionCuenta() {
 		return "El numero de su tarjeta credito es: " + tarjeta.getNumeroTarjeta();
 	}
-	
-	
 }
