@@ -29,7 +29,7 @@ public class Cliente implements iCliente {
 		return cuenta;
 	}
 	
-	public void datosCliente()throws NullPointerException {
+	public void datosCliente(){
 		if(cuenta[0]==null) {
 			System.out.println("El nombre del cliente es: " + nombre + "\nSu numero de identificacion es: " + docIdentificacion + "\n" + cuenta[1].descripcionCuenta());
 		}

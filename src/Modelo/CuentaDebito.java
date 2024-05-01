@@ -16,6 +16,6 @@ public class CuentaDebito extends Cuenta{
 	}
 	
 	public String descripcionCuenta() {
-		return "El numero de su cuenta debito es: " + numeroCuenta;
+		return "El numero de su cuenta debito es: " + numeroCuenta + " con un interes del:" + interes + "%";
 	}
 }
